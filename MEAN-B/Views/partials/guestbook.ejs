@@ -1,0 +1,36 @@
+<table>
+<tr>
+<td><strong>Id</strong></td>
+<td><strong>Username</strong></td>
+<td><strong>Country</strong></td>
+<td><strong>Date</strong></td>
+<td><strong>Message</strong></td>
+</tr>
+
+<% tag.forEach(function(tag) { %>
+<tr>
+<td><strong><%= tag.id %></strong></td>
+<td><%= tag.username %></td>
+<td><%= tag.country %></td>
+<td><%= tag.date %></td>
+<td><%= tag.message %></td>
+</tr>
+<% }); %>
+</table>
+
+
+<!-- taulukon tyyli -->
+
+<style>
+table {
+    border: 1x solid black;
+    width: 100%;
+}
+td{
+    border: 1px solid #313131;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+<br><br>
